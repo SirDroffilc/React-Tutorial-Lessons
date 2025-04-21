@@ -1,16 +1,13 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-	padding: 10px;
-}
 
 .counter-container {
 	text-align: center;
+	margin-bottom: 200px;
 }
 
 .count-display {
 	font-size: 7em;
 	margin: 50px;
+	color: white;
 }
 
 .counter-btn-container {
@@ -30,7 +27,7 @@ body {
 
 	border: none;
 	padding: 10px 20px;
-	box-shadow: 2px 2px 4px rgb(128, 128, 128);
+	box-shadow: 2px 2px 4px rgb(77, 76, 76);
 
 	cursor: pointer;
 

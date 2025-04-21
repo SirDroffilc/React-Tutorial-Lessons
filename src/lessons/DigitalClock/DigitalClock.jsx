@@ -26,11 +26,16 @@ function DigitalClock() {
     }
 
     return (
-        <div className="clock-container">
-            <div className="clock">
-                <span>{formatTime()}</span>
+        <>
+            <h1 className="clock-title">Digital Clock</h1>
+            <div className="clock-container">
+                
+                <div className="clock">
+                    <span>{formatTime()}</span>
+                </div>
             </div>
-        </div>
+        </>
+        
     )
 }
 

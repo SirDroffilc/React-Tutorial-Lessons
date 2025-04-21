@@ -1,12 +1,13 @@
-# React + Vite
+# React Tutorial
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+These repository contains the React components I wrote while studying React on "React Full Course for free ⚛️ (2024)" by Bro Code. 
 
-Currently, two official plugins are available:
+## Sample Components
+These are some of the interesting components in this repository:
+### 1. Color Picker 
+- 
+### 2. Counter
+### 3. Digital Clock
+### 4. To-Do List
+### 5. Stopwatch
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
