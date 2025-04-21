@@ -1,0 +1,30 @@
+body {
+    background-image: url(assets/animeWallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.clock-container {
+    backdrop-filter: blur(3px);
+    width: 75vw;
+}
+
+.clock {
+    color: white;
+    font-size: 7rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 3px 3px 10px black;
+    text-align: center;
+}

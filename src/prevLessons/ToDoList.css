@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p, h1, h2 {
+    display: inline-block;
+    margin: 5px 5px;
+}
+
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-title {
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+.task-list-title {
+    font-size: 2em;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.input-container input {
+    margin: 10px;
+    padding: 10px 10px;
+    min-width: 300px;
+    max-width: 600px;
+
+    background-color: rgb(41, 41, 41);
+    border: 1px solid rgb(68, 68, 68);
+    border-radius: 10px;
+    
+    color: white;
+}
+
+.button {
+    margin: 5px;
+    padding: 10px 20px;
+
+    background-color: rgb(31, 1, 66);
+    border: 1px solid rgb(80, 0, 172);
+    border-radius: 10px;
+    
+    color: white;
+
+    cursor: pointer;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 20px;
+    padding: 20px;
+
+    background-color: rgb(37, 37, 37);
+    width: 90%;
+    max-width: 600px;
+
+    border: 1px solid rgb(63, 63, 63);
+    border-radius: 10px;
+    
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    width: 90%;
+}
+
+.task-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    padding: 10px;
+    list-style-type: none;
+    background-color: rgb(22, 22, 22);
+
+    border: 1px solid rgb(58, 58, 58);
+    border-radius: 10px;
+
+    width: 100%;
+
+}
+
+.task-name {
+    flex: 1
+}
+
+.list-item-buttons {
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    .input-container input {
+        min-width: 250px;
+        width: 100%;
+    }
+
+    .task-list-item {
+        flex-direction: column;
+    }
+
+    .list-item-buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+}

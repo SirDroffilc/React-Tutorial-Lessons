@@ -1,0 +1,72 @@
+`npm run dev`
+
+3 WAYS TO STYLE REACT COMPONENTS WITH CSS:
+
+1. External
+    - normal use of a .css file
+
+2. Modules
+    - Making a directory for each component, within is the .jsx component file and .module.css file
+    - import styles from <path> then use className=styles.<className>
+    - might be great for large projects
+
+3. Inline
+    - tends to be good for minimal styling
+
+
+props 
+    - "properties"
+    - read-only properties shared between components
+    - makes each instance of a component unique
+
+propTypes
+    - a mechanism that ensures that the passed value is of the correct datatype.
+    - Ex.: age: PropTypes.number
+    - if using typescript, just use static typing
+
+defaultProps
+    - default values for props in case they are not passed from the parent component
+    
+conditional rendering
+    - allows control what gets rendered
+
+React hook
+    - special function that allows functional components to use React features without writing class components
+
+useState()
+    - a react hook that allows the creation of a stateful variable and a setter function to update its value in the virtual DOM
+    - useState() returns an array [name, setName], use array destructuring
+    - triggers a re-render of the virtual DOM, but not the entire website, only the part that has been changed
+
+onChange 
+    - event handler used primarily with form elements <input>, <textarea>, <select>, <radio>, etc.
+    - triggers a function every time the value of the input changes
+
+updater function 
+    - a function passed as an argument to setState() usually
+    - FORMAT: setYear(arrow function)
+    - allow for safe updates based on the previous stateful
+    - used with multiple state updates and asynchronous functions
+    - good practice to use updater functions
+    - Why use this? Because React batches setState() functions together, they are asynchronous; they do not update the stateful variable immediately after calling setState().
+
+useEffect() 
+    - React hook that tells React DO SOME CODE WHEN (pick one):
+        - this component re-renders
+        - this component mounts
+        - the state of a value changes
+
+    Based on what arguments you pass to useEffect(), it wil run in 3 ways:
+    1. useEffect(() => {}) 
+        - runs after every re-render
+    2. useEffect(() => {}, []) 
+        - runs only on mount
+    3. useEffect(() => {}, [value])
+        - runs on mount + when value changes
+
+    - USES:
+        1. Event Listeners
+        2. DOM manipulation
+        3. Subscriptions (real-time updates)
+        4. Fetching Data from an API
+        5. Clean up when a component unmounts
