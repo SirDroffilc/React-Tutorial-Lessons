@@ -70,3 +70,28 @@ useEffect()
         3. Subscriptions (real-time updates)
         4. Fetching Data from an API
         5. Clean up when a component unmounts
+
+useContext()
+    - React Hook that allows you to share values between multiple levels of components without passing props through each level
+    PROVIDER COMPONENT
+    1. import {createContext} from "react"
+    2. export const MyContext = createContext()
+    3. <MyContext.Provider value={value}>
+            <Child />
+        </MyContext.Provider
+    
+    CONSUMER COMPONENTS
+
+useRef()
+    - "use Reference"
+    - does not cause re-renders when its value changes
+    - used when you want a component to "remember" some information,
+        but you don't want that information to trigger new renders.
+
+    1. Accessing/interacting with DOM elements
+    2. Handling Focus, Animations, and Transitions
+    3. Managing Timers and Intervals
+
+    <input ref={}>
+        - the ref attribute of an HTML element is a special attribute used to create references to elements
+

@@ -1,10 +1,9 @@
-import DigitalClock from "./DigitalClock.jsx"
-
+import Stopwatch from "./lessons/Stopwatch/Stopwatch.jsx"
 function App() {
 
 	return (
 		<>
-			<DigitalClock />
+			<Stopwatch />
 		</>
 	)
 }
